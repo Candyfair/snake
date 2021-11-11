@@ -1,0 +1,120 @@
+body {
+    background-color: #C3B8A5;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    color: #5c3c92;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.start {
+    background-color: #077b8a;
+    border-radius: 1.5em;
+    border: none;
+    color: #a2d5c6;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 0.5em;
+    width: 9em;
+}
+
+.start:hover {
+    background-color: #a2d5c6;
+    color: #077b8a;
+}
+
+.start:focus {
+    outline: none;
+}
+
+.score {
+    color: #077b8a;
+    display: flex;
+    font-family: 'Concert One', cursive;
+    font-size: 1.5em;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.gameover {
+    color: #5c3c92;
+    display: flex;
+    font-family: 'Concert One', cursive;
+    font-size: 2em;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.hide {
+    display: none;
+}
+
+#footer {
+    color: #5c3c92;
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8em;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+/* ELEMENTS DU JEU */
+.grid {
+    background-color: #CCC1AE;
+    border: 0.3em solid #a2d5c6;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.blink-lost {
+    animation: blinkLost 200ms infinite;
+}
+
+@keyframes blinkLost{ 
+    0%, 49% { background-color: #5c3c92; } 
+    50%, 100% { background-color:#d72631; } 
+}
+
+.blink-apple {
+    animation: blinkApple 1s infinite;
+}
+
+@keyframes blinkApple{
+    0% { background-color: #a2d5c6; }
+    100% { background-color: #CCC1AE; }
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: #5c3c92;
+}
+
+.apple {
+    background-color: #d72631;
+    border-radius: 50%;
+}
